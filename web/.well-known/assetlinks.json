@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.example.movie_watchlist",
+      "sha256_cert_fingerprints": [
+        "FF:05:F6:8D:0E:16:07:B8:CE:A7:0F:EF:B4:A9:07:0C:E1:88:C6:DB:7F:69:8A:0F:4F:9B:30:5A:91:62:24:C0"
+      ]
+    }
+  }
+]

@@ -1,0 +1,72 @@
+name: movie_watchlist
+description: "CineList – Movie, Franchise & Series Tracker"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Local storage (still used for some features like franchises)
+  shared_preferences: ^2.2.2
+
+  cupertino_icons: ^1.0.8
+  http: ^1.6.0
+  cached_network_image: ^3.3.1
+  
+  image_picker: ^1.0.7
+
+  # 🟢 Supabase (Primary Backend)
+  supabase_flutter: ^2.5.6
+  share_plus: ^12.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+  # App Icon Generator
+  flutter_launcher_icons: ^0.14.4
+
+  # Splash Generator
+  flutter_native_splash: ^2.4.7
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icon/app_icon.png
+    - assets/splash/splash.png
+
+
+# ==============================
+# 🔥 APP ICON CONFIG
+# ==============================
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/icon/app_icon.png
+  min_sdk_android: 21
+  adaptive_icon_background: "#0F172A"
+  adaptive_icon_foreground: assets/icon/app_icon.png
+
+
+# ==============================
+# 🔥 SPLASH SCREEN CONFIG
+# ==============================
+
+flutter_native_splash:
+  color: "#0F172A"
+  image: assets/splash/splash.png
+  android: true
+  ios: true
+  fullscreen: true
+
+  android_12:
+    color: "#0F172A"
+    image: assets/splash/splash.png
